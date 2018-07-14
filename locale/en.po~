@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-13 00:49-0300\n"
+"PO-Revision-Date: 2018-07-13 00:59-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: balao.lua balao_decor.lua
+msgid "Balao Decorativo"
+msgstr "Decorative Balloon"
+
+#: balao_decor.lua
+msgid "Node de Balao Decorativo"
+msgstr "Decorative Balloon Node"
+
+#: bau.lua
+msgid "Bau do Balao"
+msgstr "Balloon Box"
+
+#: bau.lua
+msgid "Esse Balao nao lhe pertence"
+msgstr "This Balloon is not yours"
+
+#: bau_spawn.lua
+msgid "Bau do Balao do Centro"
+msgstr "Balloon Box of Center Spawn"
+
+#: bau_spawn.lua
+msgid "Novo centro definido"
+msgstr "New spawn center defined"
+
+#: bau_spawn.lua
+msgid "Precisa do privilegio 'server' para colocar esse bau"
+msgstr "Need the 'server' privilege to put this Balloon Box"
+
+#: corda.lua
+msgid "Corda de Balao"
+msgstr "Balloon Rope"
+
+#: gerar_balao_aleatorio.lua
+msgid "Novo local encontrado"
+msgstr "New place found"
+
+#: interface_bau.lua
+msgid "Muito distante do seu Bau de Balao"
+msgstr "Far away from your Balloon Box"
+
+#: interface_bau.lua
+msgid "Ir para Centro"
+msgstr "Go to Center"
+
+#: interface_bau.lua
+msgid "Reparar Balao"
+msgstr "Repair Balloon"
+
+#: interface_bau.lua visitas.lua
+msgid "Receber seguidor"
+msgstr "Receive follower"
+
+#: interface_bau.lua
+msgid "Ir para seu Balao"
+msgstr "Go to your balloon"
+
+#: interface_bau.lua visitas.lua
+msgid "Seguir jogador"
+msgstr "Follow a player"
+
+#: interface_bau.lua
+msgid "Precisas ter um balao ativo"
+msgstr "You need to have an active balloon"
+
+#: interface_bau.lua mensagens.lua
+msgid "Viagem ao Centro realizada"
+msgstr "Journey to the Center held"
+
+#: interface_bau.lua
+msgid "Balao ativo"
+msgstr "Balloon is active"
+
+#: interface_jogador.lua
+msgid "Gerar Balao"
+msgstr "Generate a Balloon"
+
+#: interface_jogador.lua
+msgid "Por Balao Aqui"
+msgstr "Place Balloon here"
+
+#: ir_balao.lua
+msgid "Sem nenhum balao ainda"
+msgstr "No balloon yet"
+
+#: ir_balao.lua
+msgid "Seu balao foi destruido"
+msgstr "Your balloon has been destroyed"
+
+#: ir_balao.lua
+msgid "Viagem para o posto de seu balao realizada"
+msgstr "Trip to the post of your balloon was held"
+
+#: reivindicar.lua
+msgid "Balao reivindicado com sucesso"
+msgstr "Balloon successfully claimed"
+
+#: reparar_balao.lua
+msgid "O caminho para cima esta obstruido (corda) portanto abra mais o local"
+msgstr "The way up is obstructed (rope) so open the place further"
+
+#: reparar_balao.lua
+msgid ""
+"Parte de cima obstruida (onde fica o balao) portanto libere o local ou suba"
+msgstr ""
+"Top is obstructed (where the balloon is) so wipe the top or go to a highest "
+"location"
+
+#: visitas.lua
+msgid "Pedidos recebidos"
+msgstr "Requests received"
+
+#: visitas.lua
+msgid "Voltar"
+msgstr "Return"
+
+#: visitas.lua
+msgid "Enviar pedido"
+msgstr "Send request"
+
+#: visitas.lua
+msgid "Nao podes seguir a si mesmo"
+msgstr "You can not follow yourself"
+
+#: visitas.lua
+msgid "@1 offline ou inexistente"
+msgstr "@1 offline or nonexistent"
+
+#: visitas.lua
+msgid "Pedido enviado a @1 ... Agora precisa pedir para aceitar seu pedido"
+msgstr ""
+"Request sent to @1 ... Now you need to advise him to accept your request"
+
+#: visitas.lua
+msgid "Pedido invalido"
+msgstr "Invalid request"
+
+#: visitas.lua
+msgid "@1 offline"
+msgstr "@1 offline"
+
+#: visitas.lua
+msgid "@1 saiu de perto do balao do centro"
+msgstr "@1 left close to the center balloon"
+
+#: visitas.lua
+msgid "Seu pedido para seguir @1 foi aceito mas voce se afastou do balao"
+msgstr ""
+"Your request to follow @1 was accepted but you walked away from the balloon"
+
+#: visitas.lua
+msgid "@1 te seguiu"
+msgstr "@1 followed you"
+
+#: visitas.lua
+msgid "Voce seguiu @1"
+msgstr "You followed @1"
+
+#: mensagens.lua
+msgid ""
+"Nao pode gerar um novo balao ainda (sao necessarias 24 horas desde a ultima "
+"vez que gerou)"
+msgstr ""
+"It can not generate a new balloon yet (it is necessary 24 hours since the "
+"last time it generated)"
+
+#: mensagens.lua
+msgid "Aguarde alguns segundos enquanto o balao esta endo preparado"
+msgstr "Wait a few seconds while the balloon is being prepared"
+
+#: mensagens.lua
+msgid "O Seu Balao ficou inoperante"
+msgstr "Your Balloon was inoperative"
+
+#: mensagens.lua
+msgid "Muito distante do Bau de Balao do Centro"
+msgstr "Far away from the Balloon Box of Spawn Center."
+
+#: mensagens.lua
+msgid "Muito distante do seu proprio Bau de Balao"
+msgstr "Far away from the your Balloon Box"
+
+#: mensagens.lua
+msgid ""
+"Mantenha o local limpo e aberto para levantar que o balao seja levantado "
+"automaticamente"
+msgstr ""
+"Keep the place clean and open to raise the balloon to be lifted automatically"
+
+#: mensagens.lua
+msgid "Viagem para seu proprio balao realizada"
+msgstr "Travel to your own balloon held"
+
+#: mensagens.lua
+msgid "Precisa subir para um local mais alto"
+msgstr "You need to climb to a higher location"
+
+#: mensagens.lua
+msgid "Precisa estar num lugar mais aberto"
+msgstr "You need to be in a cleaner and more open place"
+
+#: mensagens.lua
+msgid "Objetos obstruem a parte de cima portanto libere o local ou suba"
+msgstr "Objects obstruct the top so remove the objects and try again"
+
+#~ msgid ""
+#~ "Objetos obstruem a parte de cima portanto remova os objetos e tente "
+#~ "novamente"
+#~ msgstr "Objects obstruct the top so remove the objects and try again"
+
+#~ msgid "Precisa estar em local aberto"
+#~ msgstr "It needs to be in a clean and open place"
+
+#~ msgid ""
+#~ "Nao pode gerar um novo balao ainda. (sao necessarias 24 horas desde a "
+#~ "ultima vez que gerou)"
+#~ msgstr ""
+#~ "Can not generate a new balloon yet. (it is necessary 24 hours since the "
+#~ "last time it generated)"

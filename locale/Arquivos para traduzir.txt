@@ -1,0 +1,1 @@
+autogen.lua balao.lua balao_decor.lua bau.lua bau_spawn.lua check_balao_proprio.lua comandos.lua compatibilidade.lua comum.lua corda.lua gerar_balao_aleatorio.lua interface_bau.lua interface_jogador.lua ir_balao.lua online.lua reivindicar.lua reparar_balao.lua visitas.lua mensagens.lua

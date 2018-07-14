@@ -1,0 +1,22 @@
+# Configurações aplicaveis para o menu gráfico
+
+#Gera automaticamente um balao proprio para jogadores 
+#que ainda nunca geraram
+#Automatically generates a balloon for players who 
+#have never yet generated it
+telepro_autogen (Autogerar Balao proprio) bool true
+
+#Limita a geração de balões proprios em lugares aleatorios do mapa
+#Limite de 1 a cada 24 horas
+#Limits the generation of own balloons in random places on the map
+#Limit of 24 hours for a new generation
+telepro_daily_limit (Limite diario para gerar) bool true
+
+#Tempo entre cada vez que o balão do jogador é verificado
+#Time step which balloon is verified
+telepro_time_check_balloon (Tempo do iterador de checagem do balao) int 15 5
+
+
+
+
+

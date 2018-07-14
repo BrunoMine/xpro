@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-13 00:49-0300\n"
+"PO-Revision-Date: 2018-07-13 00:45-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: balao.lua balao_decor.lua
+msgid "Balao Decorativo"
+msgstr "Balao Decorativo"
+
+#: balao_decor.lua
+msgid "Node de Balao Decorativo"
+msgstr "Node de Balao Decorativo"
+
+#: bau.lua
+msgid "Bau do Balao"
+msgstr "Bau do Balao"
+
+#: bau.lua
+msgid "Esse Balao nao lhe pertence"
+msgstr "Esse Balao nao lhe pertence"
+
+#: bau_spawn.lua
+msgid "Bau do Balao do Centro"
+msgstr "Bau do Balao do Centro"
+
+#: bau_spawn.lua
+msgid "Novo centro definido"
+msgstr "Novo centro definido"
+
+#: bau_spawn.lua
+msgid "Precisa do privilegio 'server' para colocar esse bau"
+msgstr "Precisa do privilegio 'server' para colocar esse bau"
+
+#: corda.lua
+msgid "Corda de Balao"
+msgstr "Corda de Balao"
+
+#: gerar_balao_aleatorio.lua
+msgid "Novo local encontrado"
+msgstr "Novo local encontrado"
+
+#: interface_bau.lua
+msgid "Muito distante do seu Bau de Balao"
+msgstr "Muito distante do seu Bau de Balao"
+
+#: interface_bau.lua
+msgid "Ir para Centro"
+msgstr "Ir para Centro"
+
+#: interface_bau.lua
+msgid "Reparar Balao"
+msgstr "Reparar Balao"
+
+#: interface_bau.lua visitas.lua
+msgid "Receber seguidor"
+msgstr "Receber seguidor"
+
+#: interface_bau.lua
+msgid "Ir para seu Balao"
+msgstr "Ir para seu Balao"
+
+#: interface_bau.lua visitas.lua
+msgid "Seguir jogador"
+msgstr "Seguir jogador"
+
+#: interface_bau.lua
+msgid "Precisas ter um balao ativo"
+msgstr "Precisas ter um balao ativo"
+
+#: interface_bau.lua mensagens.lua
+msgid "Viagem ao Centro realizada"
+msgstr "Viagem ao Centro realizada"
+
+#: interface_bau.lua
+msgid "Balao ativo"
+msgstr "Balao ativo"
+
+#: interface_jogador.lua
+msgid "Gerar Balao"
+msgstr "Gerar Balao"
+
+#: interface_jogador.lua
+msgid "Por Balao Aqui"
+msgstr "Por Balao Aqui"
+
+#: ir_balao.lua
+msgid "Sem nenhum balao ainda"
+msgstr "Sem nenhum balao ainda"
+
+#: ir_balao.lua
+msgid "Seu balao foi destruido"
+msgstr "Seu balao foi destruido"
+
+#: ir_balao.lua
+msgid "Viagem para o posto de seu balao realizada"
+msgstr "Viagem para o posto de seu balao realizada"
+
+#: reivindicar.lua
+msgid "Balao reivindicado com sucesso"
+msgstr "Balao reivindicado com sucesso"
+
+#: reparar_balao.lua
+msgid "O caminho para cima esta obstruido (corda) portanto abra mais o local"
+msgstr "O caminho para cima esta obstruido (corda) portanto abra mais o local"
+
+#: reparar_balao.lua
+msgid ""
+"Parte de cima obstruida (onde fica o balao) portanto libere o local ou suba"
+msgstr ""
+"Parte de cima obstruida (onde fica o balao) portanto libere o local ou suba"
+
+#: visitas.lua
+msgid "Pedidos recebidos"
+msgstr "Pedidos recebidos"
+
+#: visitas.lua
+msgid "Voltar"
+msgstr "Voltar"
+
+#: visitas.lua
+msgid "Enviar pedido"
+msgstr "Enviar pedido"
+
+#: visitas.lua
+msgid "Nao podes seguir a si mesmo"
+msgstr "Nao podes seguir a si mesmo"
+
+#: visitas.lua
+msgid "@1 offline ou inexistente"
+msgstr "@1 offline ou inexistente"
+
+#: visitas.lua
+msgid "Pedido enviado a @1 ... Agora precisa pedir para aceitar seu pedido"
+msgstr "Pedido enviado a @1 ... Agora precisa pedir para aceitar seu pedido"
+
+#: visitas.lua
+msgid "Pedido invalido"
+msgstr "Pedido invalido"
+
+#: visitas.lua
+msgid "@1 offline"
+msgstr "@1 offline"
+
+#: visitas.lua
+msgid "@1 saiu de perto do balao do centro"
+msgstr "@1 saiu de perto do balao do centro"
+
+#: visitas.lua
+msgid "Seu pedido para seguir @1 foi aceito mas voce se afastou do balao"
+msgstr "Seu pedido para seguir @1 foi aceito mas voce se afastou do balao"
+
+#: visitas.lua
+msgid "@1 te seguiu"
+msgstr "@1 te seguiu"
+
+#: visitas.lua
+msgid "Voce seguiu @1"
+msgstr "Voce seguiu @1"
+
+#: mensagens.lua
+msgid ""
+"Nao pode gerar um novo balao ainda (sao necessarias 24 horas desde a ultima "
+"vez que gerou)"
+msgstr ""
+"Nao pode gerar um novo balao ainda (sao necessarias 24 horas desde a ultima "
+"vez que gerou)"
+
+#: mensagens.lua
+msgid "Aguarde alguns segundos enquanto o balao esta endo preparado"
+msgstr "Aguarde alguns segundos enquanto o balao esta endo preparado"
+
+#: mensagens.lua
+msgid "O Seu Balao ficou inoperante"
+msgstr "O Seu Balao ficou inoperante"
+
+#: mensagens.lua
+msgid "Muito distante do Bau de Balao do Centro"
+msgstr "Muito distante do Bau de Balao do Centro"
+
+#: mensagens.lua
+msgid "Muito distante do seu proprio Bau de Balao"
+msgstr "Muito distante do seu proprio Bau de Balao"
+
+#: mensagens.lua
+msgid ""
+"Mantenha o local limpo e aberto para levantar que o balao seja levantado "
+"automaticamente"
+msgstr ""
+"Mantenha o local limpo e aberto para levantar que o balao seja levantado "
+"automaticamente"
+
+#: mensagens.lua
+msgid "Viagem para seu proprio balao realizada"
+msgstr "Viagem para seu proprio balao realizada"
+
+#: mensagens.lua
+msgid "Precisa subir para um local mais alto"
+msgstr "Precisa subir para um local mais alto"
+
+#: mensagens.lua
+msgid "Precisa estar num lugar mais aberto"
+msgstr "Precisa estar num lugar mais aberto"
+
+#: mensagens.lua
+msgid "Objetos obstruem a parte de cima portanto libere o local ou suba"
+msgstr "Objetos obstruem a parte de cima portanto libere o local ou suba"
+
+#~ msgid ""
+#~ "Objetos obstruem a parte de cima portanto remova os objetos e tente "
+#~ "novamente"
+#~ msgstr ""
+#~ "Objetos obstruem a parte de cima portanto remova os objetos e tente "
+#~ "novamente"
+
+#~ msgid "Precisa estar em local aberto"
+#~ msgstr "Precisa estar em local aberto"
+
+#~ msgid ""
+#~ "Nao pode gerar um novo balao ainda. (sao necessarias 24 horas desde a "
+#~ "ultima vez que gerou)"
+#~ msgstr ""
+#~ "Nao pode gerar um novo balao ainda. (sao necessarias 24 horas desde a "
+#~ "ultima vez que gerou)"
+
+#~ msgid ""
+#~ "O caminho para cima esta obstruido. Encontre um lugar onde de para o "
+#~ "balao descer"
+#~ msgstr ""
+#~ "O caminho para cima esta obstruido. Encontre um lugar onde de para o "
+#~ "balao descer"
+
+#~ msgid "Parte de cima obstruida. Libere o local ou suba"
+#~ msgstr "Parte de cima obstruida. Libere o local ou suba"
+
+#~ msgid ""
+#~ "Balao inoperante. Aguarde mantenha o local limpo e aberto e aguarde ele "
+#~ "ficar pronto"
+#~ msgstr ""
+#~ "Balao inoperante. Aguarde mantenha o local limpo e aberto e aguarde ele "
+#~ "ficar pronto"
+
+#~ msgid "O Balao ja esta ativo. Nao precisa reparar"
+#~ msgstr "O Balao ja esta ativo. Nao precisa reparar"
+
+#~ msgid "O Seu Balao nao esta funcionando. O local foi destruido ou obstruido"
+#~ msgstr ""
+#~ "O Seu Balao nao esta funcionando. O local foi destruido ou obstruido"
+
+#~ msgid ""
+#~ "Nao pode colocar um novo balao ainda. (sao necessarias 24 horas desde a "
+#~ "ultima vez que gerou ou colocou)"
+#~ msgstr ""
+#~ "Nao pode colocar um novo balao ainda. (sao necessarias 24 horas desde a "
+#~ "ultima vez que gerou ou colocou)"
