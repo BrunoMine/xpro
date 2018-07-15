@@ -10,7 +10,7 @@
   ]]
 
 -- Niveis de acoordo com XP
-local tb_niveis = {
+xpro.niveis = {
 	0, -- Nivel 1
 	150, -- Nivel 2
 	300, -- Nivel 3
@@ -28,7 +28,25 @@ local tb_niveis = {
 	6000, -- Nivel 15
 	6900, -- Nivel 16
 	8000, -- Nivel 17
+	9200, -- Nivel 18
+	10500, -- Nivel 19
+	11900, -- Nivel 20
+	13400, -- Nivel 21
+	15000, -- Nivel 22
+	16700, -- Nivel 23
+	18500, -- Nivel 24
+	20400, -- Nivel 25
+	22400, -- Nivel 26
+	24500, -- Nivel 27
+	26700, -- Nivel 28
+	29000, -- Nivel 29
+	31400, -- Nivel 30
+	33900, -- Nivel 31
+	36500, -- Nivel 32
+	39200, -- Nivel 33
+	42000, -- Nivel 34
 }
+local tb_niveis = xpro.niveis
 
 -- Pegar nivel de acordo com XP
 local get_lvl = function(my_xp)

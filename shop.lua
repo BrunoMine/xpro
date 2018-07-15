@@ -6,17 +6,10 @@
 	Public License junto com esse software,
 	se não, veja em <http://www.gnu.org/licenses/>. 
 	
-	Evoluir ao colocar um node
+	Shopping de XP
   ]]
 
-minetest.register_on_placenode(function(pos, newnode, placer, oldnode, itemstack, pointed_thing)
-    
-	xpro.rem_xp(placer:get_player_name(), 200)
-    
-end)
-
-
-
+local S = xpro.S
 
 
 

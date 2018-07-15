@@ -23,9 +23,26 @@ sfinv.register_page("xpro:info", {
 		local my_xp = xpro.get_player_xp(name)
 		local my_lvl = xpro.get_player_lvl(name)
 		
+		-- Calcula progresso da barra
+		local progresso = 1
+		if xpro.niveis[my_lvl+1] ~= nil then
+			local xp = xpro.niveis[my_lvl] - my_xp
+			local xp_t = xpro.niveis[my_lvl] - xpro.niveis[my_lvl+1]
+			progresso = xp/xp_t
+		end
+		
 		local formspec = "label[0,0;Nivel "..my_lvl.."]"
 			.."label[0,0.5;Pontos: "..my_xp.."]"
-			.."button[4,0;4,1;ranking;Ranking Global]"
+			.."button[0,2.5;3,1;ranking;Ranking Global]"
+			
+			-- Liga
+			.."image[2.8,0.4;"..(1.3*5)..","..(1.3*3)..";xpro_liga_bg.png]"
+			.."label[3,0;Liga "..xpro.ligas[my_lvl].name.."]"
+			.."image[4.17,0.7;3.2,3.2;"..xpro.ligas[my_lvl].img.."]"
+			
+			.."label[0,3.3;Progresso]"
+			.."image[0,3.8;9.65,0.8;xpro_xp_bar_alfa.png^[lowpart:"..math.ceil(progresso*100)..":xpro_xp_bar.png^[transformR270]"
+			.."image[0,3.8;9.65,0.8;xpro_xp_bar_grade.png]"
 		
 		return sfinv.make_formspec(player, context, formspec, true)
 	end,

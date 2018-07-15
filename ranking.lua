@@ -19,8 +19,10 @@ xpro.ranking = {}
 
 -- Atualizar ranking
 xpro.update_rank = function(name)
+	local att_name = {}
 	local rank = xpro.get_rank()
-	local pontos = xpro.bd.pegar("jogador_"..name, "xp")
+	local pontos = 0
+	if xpro.bd.verif("jogador_"..name, "xp") == true then pontos = xpro.bd.pegar("jogador_"..name, "xp") end
 	local m1 = {name=name,pontos=pontos}
 	local m2 = {}
 	for x=1, 10 do
@@ -53,6 +55,9 @@ xpro.update_rank = function(name)
 			
 		-- Se o objeto atual for um recolocado
 		else
+			-- Marca para reclassificalos posteriormente
+			table.insert(att_name, tostring(m1.name))
+			
 			-- Se for o objeto novo que ja foi colocado
 			if rank[tostring(x)].name == name then
 				rank[tostring(x)].name = m1.name
@@ -76,8 +81,15 @@ xpro.update_rank = function(name)
 			
 		end
 	end
+	
 	xpro.bd.salvar("ranking", "pontos", rank)
 	xpro.ranking = minetest.deserialize(minetest.serialize(rank))
+	
+	-- Recoloca os necessarios
+	for _, n in ipairs(att_name) do
+		xpro.update_rank(n)
+		break
+	end
 end
 
 -- Certifica de que rank existe
@@ -102,18 +114,27 @@ xpro.ranking_formspec = ""
 
 local update_formspec = function()
 	
-	xpro.ranking_formspec = "size[7,6]"
+	xpro.ranking_formspec = "size[7,7]"
 		..default.gui_bg
 		..default.gui_bg_img
 		.."label[0.6,0.4;Pontos]"
-		.."label[2.1,0.4;Jogador]"
+		.."label[2.4,0.4;Jogador]"
 	
 	-- Monta Ranking
 	local rank = xpro.get_rank()
 	for x=1, 10 do
-		local w = (0.4+(0.5*x))
+		local w = (0.4+(0.5*x))+(0.1*x)
+		local liga = nil
+		if xpro.bd.verif("jogador_"..rank[tostring(x)].name, "lvl") == true then liga = xpro.ligas[xpro.bd.pegar("jogador_"..rank[tostring(x)].name, "lvl")] end
+		if liga ~= nil then
+			liga = "image[1.75,"..(w*0.995-0.05)..";0.66,0.66;"..liga.img.."]"
+		else
+			liga = ""
+		end
 		xpro.ranking_formspec = xpro.ranking_formspec .."label[0.6,"..w..";"..rank[tostring(x)].pontos.."]"
-			.."label[2.1,"..w..";"..rank[tostring(x)].name.."]"
+			.."image[1.6,"..(w*0.995-0.05)..";1,0.66;xpro_liga_bg.png]"
+			..liga
+			.."label[2.4,"..w..";"..rank[tostring(x)].name.."]"
 	end
 end
 update_formspec()
@@ -125,7 +146,7 @@ xpro.register_on_add_xp(function(name, xp_added)
 end)
 xpro.register_on_rem_xp(function(name, xp_removed)
 	xpro.update_rank(name)
-	update_formspec(name)
+	update_formspec()
 end)
 
 

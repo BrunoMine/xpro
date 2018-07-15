@@ -12,7 +12,7 @@
 
 minetest.register_on_dignode(function(pos, oldnode, digger)
     
-    xpro.add_xp(digger:get_player_name(), 30)
+    xpro.add_xp(digger:get_player_name(), 200)
     
 end)
 

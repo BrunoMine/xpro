@@ -32,6 +32,7 @@ xpro.var = {}
 
 -- API
 dofile(modpath.."/api.lua")
+dofile(modpath.."/ligas.lua")
 dofile(modpath.."/sfinv.lua")
 dofile(modpath.."/progresso.lua")
 dofile(modpath.."/ranking.lua")
