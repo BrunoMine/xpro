@@ -27,12 +27,16 @@ notificar("Carregando scripts...")
 -- Criação do banco de dados
 xpro.bd = dofile(modpath.."/lib/memor.lua")
 
+-- Plucar itens "PLUS"
+xpro.tror = dofile(modpath.."/lib/tror.lua")
+
 -- Variaveis personalizaveis
 xpro.var = {}
 
 -- API
 dofile(modpath.."/api.lua")
 dofile(modpath.."/ligas.lua")
+dofile(modpath.."/shop.lua")
 dofile(modpath.."/sfinv.lua")
 dofile(modpath.."/progresso.lua")
 dofile(modpath.."/ranking.lua")

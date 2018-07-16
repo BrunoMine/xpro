@@ -22,6 +22,8 @@ sfinv.register_page("xpro:info", {
 		
 		local my_xp = xpro.get_player_xp(name)
 		local my_lvl = xpro.get_player_lvl(name)
+		local xp_gasto = player:get_attribute("xpro_xp_gasto")
+		local xp_disp = my_xp-xp_gasto
 		
 		-- Calcula progresso da barra
 		local progresso = 1
@@ -33,6 +35,8 @@ sfinv.register_page("xpro:info", {
 		
 		local formspec = "label[0,0;Nivel "..my_lvl.."]"
 			.."label[0,0.5;Pontos: "..my_xp.."]"
+			.."label[0,1;Cash XP: "..xp_disp.."]"
+			.."button[0,1.5;3,1;shop;Loja de Premios]"
 			.."button[0,2.5;3,1;ranking;Ranking Global]"
 			
 			-- Liga
@@ -49,6 +53,8 @@ sfinv.register_page("xpro:info", {
 	on_player_receive_fields = function(self, player, context, fields)
 		if fields.ranking then
 			minetest.show_formspec(player:get_player_name(), "xpro:ranking", xpro.ranking_formspec)
+		elseif fields.shop then
+			xpro.acessar_shop(player:get_player_name())
 		end
 	end,
 	
