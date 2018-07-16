@@ -27,7 +27,7 @@ notificar("Carregando scripts...")
 -- Criação do banco de dados
 xpro.bd = dofile(modpath.."/lib/memor.lua")
 
--- Plucar itens "PLUS"
+-- Lib tror
 xpro.tror = dofile(modpath.."/lib/tror.lua")
 
 -- Variaveis personalizaveis
@@ -40,8 +40,11 @@ dofile(modpath.."/shop.lua")
 dofile(modpath.."/sfinv.lua")
 dofile(modpath.."/progresso.lua")
 dofile(modpath.."/ranking.lua")
+dofile(modpath.."/hud.lua")
 
 -- Metodos para evoluir
+dofile(modpath.."/metodos/die.lua")
+dofile(modpath.."/metodos/craft.lua")
 dofile(modpath.."/metodos/dig_node.lua")
 dofile(modpath.."/metodos/place_node.lua")
 

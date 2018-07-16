@@ -100,7 +100,7 @@ end
 
 -- Adicionar XP
 xpro.add_xp = function(name, xp_add)
-	
+	minetest.chat_send_all(name.." recebeu "..xp_add.."XP")
 	-- Nome da tabela referente ao jogador no banco de dados
 	local tb_name = "jogador_"..name
 	
@@ -135,7 +135,7 @@ end
 
 -- Remover XP
 xpro.rem_xp = function(name, xp_rem)
-	
+	minetest.chat_send_all(name.." perdeu "..xp_rem.."XP")
 	-- Nome da tabela referente ao jogador no banco de dados
 	local tb_name = "jogador_"..name
 	

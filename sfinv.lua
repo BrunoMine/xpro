@@ -24,6 +24,7 @@ sfinv.register_page("xpro:info", {
 		local my_lvl = xpro.get_player_lvl(name)
 		local xp_gasto = player:get_attribute("xpro_xp_gasto")
 		local xp_disp = my_xp-xp_gasto
+		if xp_disp < 0 then xp_disp = 0 end
 		
 		-- Calcula progresso da barra
 		local progresso = 1
@@ -40,7 +41,7 @@ sfinv.register_page("xpro:info", {
 			.."button[0,2.5;3,1;ranking;Ranking Global]"
 			
 			-- Liga
-			.."image[2.8,0.4;"..(1.3*5)..","..(1.3*3)..";xpro_liga_bg.png]"
+			.."image[3.8,0.34;4,4;xpro_liga_bg.png]"
 			.."label[3,0;Liga "..xpro.ligas[my_lvl].name.."]"
 			.."image[4.17,0.7;3.2,3.2;"..xpro.ligas[my_lvl].img.."]"
 			

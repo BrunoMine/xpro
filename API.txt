@@ -14,6 +14,16 @@ API para mod Xpro v1.0.0
 	* Retorna o numero de pontos de xp do jogador
 * `xpro.get_player_lvl(name)`
 	* Retorna o numero do nivel do jogador
+* `xpro.registrar_premio(name, Definições do Prêmio)`
+	* Registra um premio para ser trocado por cash xp
+	* `name` é o nome de exibição do item na lista de prêmios 
+	* Definições de Prêmio
+		{
+			item=<itemstring>, -- Item string do item a ser dado ao jogador
+			qtd=<number of itens>, -- Quantidade de itens a ser dado ao jogador
+			custo=<cost in xp cash>, -- Custo da troca em cash xp que o jogador vai ter que pagar
+		}
+	
 
 
 
