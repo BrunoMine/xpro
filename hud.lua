@@ -163,7 +163,7 @@ xpro.register_on_add_xp(function(name, xp_added, lvl_changed)
 		adicionar_hud(minetest.get_player_by_name(name), def_liga, 8)
 		local def_text_liga = {
 			hud_elem_type = "text",
-			position = {x=0.505,y=0.265},
+			position = {x=0.5,y=0.265},
 			scale = {x=500,y=500},
 			text = S("Liga @1", liga.name),
 			number = 0x00FF00,
@@ -173,7 +173,7 @@ xpro.register_on_add_xp(function(name, xp_added, lvl_changed)
 		adicionar_hud(minetest.get_player_by_name(name), def_text_liga, 8)
 		local def_text_lvl = {
 			hud_elem_type = "text",
-			position = {x=0.505,y=0.29},
+			position = {x=0.5,y=0.29},
 			scale = {x=500,y=500},
 			text = S("Nivel @1", new_lvl),
 			number = 0x00FF00,
@@ -226,7 +226,7 @@ xpro.register_on_rem_xp(function(name, xp_removed, lvl_changed)
 		adicionar_hud(minetest.get_player_by_name(name), def_liga, 8)
 		local def_text_liga = {
 			hud_elem_type = "text",
-			position = {x=0.505,y=0.265},
+			position = {x=0.5,y=0.265},
 			scale = {x=500,y=500},
 			text = S("Liga @1", liga.name),
 			number = 0xFF0000,
@@ -236,7 +236,7 @@ xpro.register_on_rem_xp(function(name, xp_removed, lvl_changed)
 		adicionar_hud(minetest.get_player_by_name(name), def_text_liga, 8)
 		local def_text_lvl = {
 			hud_elem_type = "text",
-			position = {x=0.505,y=0.29},
+			position = {x=0.5,y=0.29},
 			scale = {x=500,y=500},
 			text = S("Nivel @1", new_lvl),
 			number = 0xFF0000,
