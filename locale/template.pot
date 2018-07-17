@@ -3,245 +3,264 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 23:14-0300\n"
-"PO-Revision-Date: 2018-07-16 23:34-0300\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2018-07-17 10:28-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en\n"
 
 #: hud.lua
 msgid "XP"
-msgstr "XP"
+msgstr ""
 
 #: hud.lua
 msgid "+@1XP"
-msgstr "+@1XP"
+msgstr ""
 
 #: hud.lua sfinv.lua
 msgid "Liga @1"
-msgstr "League @1"
+msgstr ""
 
 #: hud.lua sfinv.lua
 msgid "Nivel @1"
-msgstr "Level @1"
+msgstr ""
 
 #: hud.lua
 msgid "-@1XP"
-msgstr "-@1XP"
+msgstr ""
 
 #: ligas.lua
 msgid "Novato I"
-msgstr "Novice I"
+msgstr ""
 
 #: ligas.lua
 msgid "Novato II"
-msgstr "Novice II"
+msgstr ""
 
 #: ligas.lua
 msgid "Novato III"
-msgstr "Novice III"
+msgstr ""
 
 #: ligas.lua
 msgid "Madeira I"
-msgstr "Wood I"
+msgstr ""
 
 #: ligas.lua
 msgid "Madeira II"
-msgstr "Wood II"
+msgstr ""
 
 #: ligas.lua
 msgid "Madeira III"
-msgstr "Wood III"
+msgstr ""
 
 #: ligas.lua
 msgid "Madeira IV"
-msgstr "Wood IV"
+msgstr ""
 
 #: ligas.lua
 msgid "Madeira V"
-msgstr "Wood V"
+msgstr ""
 
 #: ligas.lua
 msgid "Madeira VI"
-msgstr "Wood VI"
+msgstr ""
 
 #: ligas.lua
 msgid "Madeira VII"
-msgstr "Wood VII"
+msgstr ""
 
 #: ligas.lua
 msgid "Pedra I"
-msgstr "Stone I"
+msgstr ""
 
 #: ligas.lua
 msgid "Pedra II"
-msgstr "Stone II"
+msgstr ""
 
 #: ligas.lua
 msgid "Pedra III"
-msgstr "Stone III"
+msgstr ""
 
 #: ligas.lua
 msgid "Pedra IV"
-msgstr "Stone IV"
+msgstr ""
 
 #: ligas.lua
 msgid "Pedra V"
-msgstr "Stone V"
+msgstr ""
 
 #: ligas.lua
 msgid "Pedra VI"
-msgstr "Stone VI"
+msgstr ""
 
 #: ligas.lua
 msgid "Ferro I"
-msgstr "Steel I"
+msgstr ""
 
 #: ligas.lua
 msgid "Ferro II"
-msgstr "Steel II"
+msgstr ""
 
 #: ligas.lua
 msgid "Ferro III"
-msgstr "Steel III"
+msgstr ""
 
 #: ligas.lua
 msgid "Ferro IV"
-msgstr "Steel IV"
+msgstr ""
 
 #: ligas.lua
 msgid "Ferro V"
-msgstr "Steel V"
+msgstr ""
 
 #: ligas.lua
 msgid "Ferro VI"
-msgstr "Steel VI"
+msgstr ""
+
+#: ligas.lua
+msgid "Bronze II"
+msgstr ""
+
+#: ligas.lua
+msgid "Bronze III"
+msgstr ""
+
+#: ligas.lua
+msgid "Bronze IV"
+msgstr ""
+
+#: ligas.lua
+msgid "Bronze V"
+msgstr ""
+
+#: ligas.lua
+msgid "Bronze VI"
+msgstr ""
 
 #: ligas.lua
 msgid "Mese I"
-msgstr "Mese I"
+msgstr ""
 
 #: ligas.lua
 msgid "Mese II"
-msgstr "Mese II"
+msgstr ""
 
 #: ligas.lua
 msgid "Mese III"
-msgstr "Mese III"
+msgstr ""
 
 #: ligas.lua
 msgid "Mese IV"
-msgstr "Mese IV"
+msgstr ""
 
 #: ligas.lua
 msgid "Mese V"
-msgstr "Mese V"
+msgstr ""
 
 #: ligas.lua
 msgid "Mese VI"
-msgstr "Mese VI"
+msgstr ""
 
 #: ligas.lua
 msgid "Diamante I"
-msgstr "Diamond I"
+msgstr ""
 
 #: ligas.lua
 msgid "Diamante II"
-msgstr "Diamond II"
+msgstr ""
 
 #: ligas.lua
 msgid "Diamante III"
-msgstr "Diamond III"
+msgstr ""
 
 #: ligas.lua
 msgid "Diamante IV"
-msgstr "Diamond IV"
+msgstr ""
 
 #: ligas.lua
 msgid "Diamante V"
-msgstr "Diamond V"
+msgstr ""
 
 #: ligas.lua
 msgid "Diamante VI"
-msgstr "Diamond VI"
+msgstr ""
 
 #: ranking.lua
 msgid "Pontos"
-msgstr "Score"
+msgstr ""
 
 #: ranking.lua
 msgid "Jogador"
-msgstr "Player"
+msgstr ""
 
 #: sfinv.lua
 msgid "Nivel"
-msgstr "Level"
+msgstr ""
 
 #: sfinv.lua
 msgid "Pontos: @1"
-msgstr "Score: @1"
+msgstr ""
 
 #: sfinv.lua shop.lua
 msgid "Cash XP: @1"
-msgstr "XP Cash: @1"
+msgstr ""
 
 #: sfinv.lua
 msgid "Loja de Premios"
-msgstr "Awards Store"
+msgstr ""
 
 #: sfinv.lua
 msgid "Ranking Global"
-msgstr "Global Ranking"
+msgstr ""
 
 #: sfinv.lua
 msgid "Progresso"
-msgstr "Progress"
+msgstr ""
 
 #: shop.lua
 msgid "Loja de Itens por XP"
-msgstr "Awards Store"
+msgstr ""
 
 #: shop.lua
 msgid "Escolha um Item"
-msgstr "Choose an item"
+msgstr ""
 
 #: shop.lua
 msgid "Custo: @1 CashXP"
-msgstr "Cost: @1 XPCash"
+msgstr ""
 
 #: shop.lua
 msgid "Unidades: @1"
-msgstr "Units: @1"
+msgstr ""
 
 #: shop.lua
 msgid "Comprar"
-msgstr "Buy"
+msgstr ""
 
 #: shop.lua
 msgid "Cash XP insuficiente"
-msgstr "Insufficient XPCash"
+msgstr ""
 
 #: shop.lua
 msgid "Inventario lotado"
-msgstr "Full inventory"
+msgstr ""
 
 #: shop.lua
 msgid "Adiquirido"
-msgstr "Acquired"
+msgstr ""
 
 #: shop.lua
 msgid "Pedras"
-msgstr "Stones"
+msgstr ""
 
 #: shop.lua
 msgid "Pedregulho"
-msgstr "Cobble"
+msgstr ""

@@ -34,6 +34,7 @@ xpro.tror = dofile(modpath.."/lib/tror.lua")
 xpro.var = {}
 
 -- API
+dofile(modpath.."/tradutor.lua")
 dofile(modpath.."/api.lua")
 dofile(modpath.."/ligas.lua")
 dofile(modpath.."/shop.lua")
@@ -47,6 +48,9 @@ dofile(modpath.."/metodos/die.lua")
 dofile(modpath.."/metodos/craft.lua")
 dofile(modpath.."/metodos/dig_node.lua")
 dofile(modpath.."/metodos/place_node.lua")
+
+-- Suporte para mods
+dofile(modpath.."/mods_suportados/minetest_game.lua")
 
 notificar("OK")
 

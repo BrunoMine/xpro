@@ -10,15 +10,7 @@
   ]]
 
 -- Lista de itens que geram recompensa
-xpro.dig_node_xp_list = {
-	["default:stone_with_coal"] = 1,
-	["default:stone_with_tin"] = 1,
-	["default:stone_with_copper"] = 2,
-	["default:stone_with_iron"] = 3,
-	["default:stone_with_gold"] = 5,
-	["default:stone_with_mese"] = 5,
-	["default:stone_with_diamond"] = 5,
-}
+xpro.dig_node_xp_list = {}
 
 -- Chamada global
 minetest.register_on_dignode(function(pos, oldnode, digger)
@@ -33,8 +25,11 @@ minetest.register_on_dignode(function(pos, oldnode, digger)
 	end
 end)
 
-
-
+-- Registrar item para o evento
+xpro.register_on_dignode = function(name, xp)
+	if tonumber(xp) == 0 then return end
+	xpro.dig_node_xp_list[name] = xp
+end
 
 
 

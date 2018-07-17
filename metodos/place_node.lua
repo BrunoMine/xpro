@@ -10,10 +10,7 @@
   ]]
 
 -- Lista de itens que geram recompensa
-xpro.place_node_xp_list = {
-	--["default:stone_with_coal"] = 1,
-	--["default:stone_with_mese"] = -5,
-}
+xpro.place_node_xp_list = {}
 
 -- Chamada global
 minetest.register_on_placenode(function(pos, newnode, placer, oldnode, itemstack, pointed_thing)
@@ -28,6 +25,11 @@ minetest.register_on_placenode(function(pos, newnode, placer, oldnode, itemstack
 	end
 end)
 
+-- Registrar item para o evento
+xpro.register_on_placenode = function(name, xp)
+	if tonumber(xp) == 0 then return end
+	xpro.place_node_xp_list[name] = xp
+end
 
 
 

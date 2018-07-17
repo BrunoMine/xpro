@@ -10,22 +10,6 @@
   ]]
 
 
-xpro.register_on_add_xp(function(name, xp_added, lvl_changed)
-	if lvl_changed == true then
-		minetest.chat_send_player(name, "Atingiu Nivel "..xpro.get_player_lvl(name))
-	end
-end)
-
-
-xpro.register_on_rem_xp(function(name, xp_removed, lvl_changed)
-	if lvl_changed == true then
-		minetest.chat_send_player(name, "Regrediu ao Nivel "..xpro.get_player_lvl(name))
-	end
-end)
-
-
-
-
 
 
 

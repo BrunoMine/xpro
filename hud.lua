@@ -15,6 +15,7 @@ local S = xpro.S
 if hb then
 	
 	local get_progress = function(my_xp, my_lvl)
+		if xpro.niveis[my_lvl+1] == nil then return 100 end
 		local xp = xpro.niveis[my_lvl] - my_xp
 		local xp_t = xpro.niveis[my_lvl] - xpro.niveis[my_lvl+1]
 		local p = xp/xp_t
@@ -82,7 +83,7 @@ if hb then
 		-- text_color
 		"0xFFFFFF", 
 		-- label
-		"XP", 
+		S("XP"), 
 		-- textures
 		{
 			bar = "xpro_hudbars_bar_xp.png",
@@ -131,7 +132,7 @@ xpro.register_on_add_xp(function(name, xp_added, lvl_changed)
 		hud_elem_type = "text",
 		position = {x=(math.random(1, 100)/100)*0.5+0.23,y=(math.random(1, 100)/100)*0.15+0.58},
 		scale = {x=500,y=500},
-		text = "+"..xp_added.."XP",
+		text = S("+@1XP", xp_added),
 		number = 0x00FF00,
 		alignment = {x=1,y=1},
 		offset = {x=0, y=0},
@@ -164,7 +165,7 @@ xpro.register_on_add_xp(function(name, xp_added, lvl_changed)
 			hud_elem_type = "text",
 			position = {x=0.505,y=0.265},
 			scale = {x=500,y=500},
-			text = "Liga "..liga.name,
+			text = S("Liga @1", liga.name),
 			number = 0x00FF00,
 			alignment = {x=0,y=0},
 			offset = {x=0, y=0},
@@ -174,12 +175,17 @@ xpro.register_on_add_xp(function(name, xp_added, lvl_changed)
 			hud_elem_type = "text",
 			position = {x=0.505,y=0.29},
 			scale = {x=500,y=500},
-			text = "Nivel "..new_lvl,
+			text = S("Nivel @1", new_lvl),
 			number = 0x00FF00,
 			alignment = {x=0,y=0},
 			offset = {x=0, y=0},
 		}
 		adicionar_hud(minetest.get_player_by_name(name), def_text_lvl, 8)
+		
+		minetest.sound_play("xpro_upgrade_lvl", {
+			to_player = name,
+			gain = 0.5,
+		})
 	end
 end)
 -- Alterar barra ao remover XP
@@ -189,7 +195,7 @@ xpro.register_on_rem_xp(function(name, xp_removed, lvl_changed)
 		hud_elem_type = "text",
 		position = {x=(math.random(1, 100)/100)*0.5+0.23,y=(math.random(1, 100)/100)*0.15+0.58},
 		scale = {x=500,y=500},
-		text = "-"..xp_removed.."XP",
+		text = S("-@1XP", xp_removed),
 		number = 0xFF0000,
 		alignment = {x=1,y=1},
 		offset = {x=0, y=0},
@@ -222,7 +228,7 @@ xpro.register_on_rem_xp(function(name, xp_removed, lvl_changed)
 			hud_elem_type = "text",
 			position = {x=0.505,y=0.265},
 			scale = {x=500,y=500},
-			text = "Liga "..liga.name,
+			text = S("Liga @1", liga.name),
 			number = 0xFF0000,
 			alignment = {x=0,y=0},
 			offset = {x=0, y=0},
@@ -232,12 +238,17 @@ xpro.register_on_rem_xp(function(name, xp_removed, lvl_changed)
 			hud_elem_type = "text",
 			position = {x=0.505,y=0.29},
 			scale = {x=500,y=500},
-			text = "Nivel "..new_lvl,
+			text = S("Nivel @1", new_lvl),
 			number = 0xFF0000,
 			alignment = {x=0,y=0},
 			offset = {x=0, y=0},
 		}
 		adicionar_hud(minetest.get_player_by_name(name), def_text_lvl, 8)
+		
+		minetest.sound_play("xpro_downgrade_lvl", {
+			to_player = name,
+			gain = 0.5,
+		})
 	end
 	
 end)

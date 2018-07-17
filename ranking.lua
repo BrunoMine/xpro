@@ -9,6 +9,9 @@
 	Gerenciamento do Ranking
   ]]
 
+-- Traduções
+local S = xpro.S
+
 -- Pegar ranking
 xpro.get_rank = function()
 	return xpro.bd.pegar("ranking", "pontos")
@@ -117,8 +120,8 @@ local update_formspec = function()
 	xpro.ranking_formspec = "size[7,7]"
 		..default.gui_bg
 		..default.gui_bg_img
-		.."label[0.6,0.4;Pontos]"
-		.."label[2.4,0.4;Jogador]"
+		.."label[0.6,0.4;"..S("Pontos").."]"
+		.."label[2.4,0.4;"..S("Jogador").."]"
 	
 	-- Monta Ranking
 	local rank = xpro.get_rank()
@@ -132,7 +135,7 @@ local update_formspec = function()
 			liga = ""
 		end
 		xpro.ranking_formspec = xpro.ranking_formspec .."label[0.6,"..w..";"..rank[tostring(x)].pontos.."]"
-			.."image[1.6,"..(w*0.995-0.05)..";1,0.66;xpro_liga_bg.png]"
+			.."image[1.75,"..(w*0.995-0.05)..";0.66,0.66;xpro_liga_bg.png]"
 			..liga
 			.."label[2.4,"..w..";"..rank[tostring(x)].name.."]"
 	end

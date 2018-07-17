@@ -11,10 +11,11 @@
 
 if sfinv == nil then return end
 
+-- Traduções
 local S = xpro.S
 
 sfinv.register_page("xpro:info", {
-	title = "Nivel",
+	title = S("Nivel"),
 	
 	get = function(self, player, context)
 		
@@ -34,18 +35,18 @@ sfinv.register_page("xpro:info", {
 			progresso = xp/xp_t
 		end
 		
-		local formspec = "label[0,0;Nivel "..my_lvl.."]"
-			.."label[0,0.5;Pontos: "..my_xp.."]"
-			.."label[0,1;Cash XP: "..xp_disp.."]"
-			.."button[0,1.5;3,1;shop;Loja de Premios]"
-			.."button[0,2.5;3,1;ranking;Ranking Global]"
+		local formspec = "label[0,0;"..S("Nivel @1", my_lvl).."]"
+			.."label[0,0.5;"..S("Pontos: @1", my_xp).."]"
+			.."label[0,1;"..S("Cash XP: @1", xp_disp).."]"
+			.."button[0,1.5;3,1;shop;"..S("Loja de Premios").."]"
+			.."button[0,2.5;3,1;ranking;"..S("Ranking Global").."]"
 			
 			-- Liga
 			.."image[3.8,0.34;4,4;xpro_liga_bg.png]"
-			.."label[3,0;Liga "..xpro.ligas[my_lvl].name.."]"
+			.."label[3,0;"..S("Liga @1", xpro.ligas[my_lvl].name).."]"
 			.."image[4.17,0.7;3.2,3.2;"..xpro.ligas[my_lvl].img.."]"
 			
-			.."label[0,3.3;Progresso]"
+			.."label[0,3.3;"..S("Progresso").."]"
 			.."image[0,3.8;9.65,0.8;xpro_xp_bar_alfa.png^[lowpart:"..math.ceil(progresso*100)..":xpro_xp_bar.png^[transformR270]"
 			.."image[0,3.8;9.65,0.8;xpro_xp_bar_grade.png]"
 		

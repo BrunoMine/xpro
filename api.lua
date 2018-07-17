@@ -45,6 +45,11 @@ xpro.niveis = {
 	36500, -- Nivel 32
 	39200, -- Nivel 33
 	42000, -- Nivel 34
+	44900, -- Nivel 35
+	47900, -- Nivel 36
+	51000, -- Nivel 37
+	54200, -- Nivel 38
+	57500, -- Nivel 39
 }
 local tb_niveis = xpro.niveis
 
@@ -100,7 +105,7 @@ end
 
 -- Adicionar XP
 xpro.add_xp = function(name, xp_add)
-	minetest.chat_send_all(name.." recebeu "..xp_add.."XP")
+
 	-- Nome da tabela referente ao jogador no banco de dados
 	local tb_name = "jogador_"..name
 	
@@ -135,7 +140,7 @@ end
 
 -- Remover XP
 xpro.rem_xp = function(name, xp_rem)
-	minetest.chat_send_all(name.." perdeu "..xp_rem.."XP")
+
 	-- Nome da tabela referente ao jogador no banco de dados
 	local tb_name = "jogador_"..name
 	

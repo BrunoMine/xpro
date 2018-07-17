@@ -2,20 +2,13 @@ API para mod Xpro v1.0.0
 
 ### Métodos
 
-* `xpro.add_xp(name, xp_add)`
-	* Adiciona xp a um jogador
-* `xpro.register_on_add_xp(func(name, xp_added, lvl_changed))`
-	* Registra uma função a ser executada apos ser adicionado xp a um jogador
-* `xpro.rem_xp(name, xp_rem)`
-	* Remove xp a um jogador
-* `xpro.register_on_rem_xp(func(name, xp_removed, lvl_changed))`
-	* Registra uma função a ser executada apos ser removido xp de um jogador
-* `xpro.get_player_xp(name)`
-	* Retorna o numero de pontos de xp do jogador
-* `xpro.get_player_lvl(name)`
-	* Retorna o numero do nivel do jogador
-* `xpro.registrar_premio(name, Definições do Prêmio)`
-	* Registra um premio para ser trocado por cash xp
+* `xpro.add_xp(name, xp_add)`: Adiciona xp a um jogador
+* `xpro.register_on_add_xp(func(name, xp_added, lvl_changed))`: Registra uma função a ser executada apos ser adicionado xp a um jogador
+* `xpro.rem_xp(name, xp_rem)`: Remove xp a um jogador
+* `xpro.register_on_rem_xp(func(name, xp_removed, lvl_changed))`: Registra uma função a ser executada apos ser removido xp de um jogador
+* `xpro.get_player_xp(name)`: Retorna o numero de pontos de xp do jogador
+* `xpro.get_player_lvl(name)`: Retorna o numero do nivel do jogador
+* `xpro.registrar_premio(name, Definições do Prêmio)`: Registra um premio para ser trocado por cash xp
 	* `name` é o nome de exibição do item na lista de prêmios 
 	* Definições de Prêmio
 		{
@@ -23,7 +16,10 @@ API para mod Xpro v1.0.0
 			qtd=<number of itens>, -- Quantidade de itens a ser dado ao jogador
 			custo=<cost in xp cash>, -- Custo da troca em cash xp que o jogador vai ter que pagar
 		}
-	
+* `xpro.register_on_craft(name, xp)`: Registra um item para alterar xp ao craftar um item
+* `xpro.register_on_dignode(name, xp)`: Registra um item para alterar xp ao cavar um node
+* `xpro.register_on_placenode(name, xp)`: Registra um item para alterar xp ao colocar um node
+
 
 
 

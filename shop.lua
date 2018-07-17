@@ -9,6 +9,7 @@
 	Shopping de XP
   ]]
 
+-- Traduções
 local S = xpro.S
 
 -- Assegurar dados
@@ -57,8 +58,8 @@ xpro.acessar_shop = function(name, aviso)
 	local formspec = "size[8,5]"
 		..default.gui_bg
 		..default.gui_bg_img
-		.."label[0,0;Loja de Itens por XP]"
-		.."label[0,0.5;Cash XP: "..xp_disp.."]"
+		.."label[0,0;"..S("Loja de Itens por XP").."]"
+		.."label[0,0.5;"..S("Cash XP: @1", xp_disp).."]"
 		.."textlist[3.2,0;4.5,5;menu;"..string_menu_shop.."]"
 	
 	if aviso then
@@ -67,14 +68,14 @@ xpro.acessar_shop = function(name, aviso)
 	
 	-- Nenhum item escolhido
 	if acesso.escolha == nil then
-		formspec = formspec .. "label[0,2;Escolha um Item]"
+		formspec = formspec .. "label[0,2;"..S("Escolha um Item").."]"
 	
 	-- Exibir item escolhido
 	else
 		local escolha = xpro.premios[acesso.escolha]
-		formspec = formspec .. "label[0,2;Custo: "..escolha.custo.."XP]"
-			.."label[0,2.5;Unidades: "..escolha.qtd.."]"
-			.."item_image_button[0,3;2.1,2.1;"..escolha.item..";comprar;Comprar]"
+		formspec = formspec .. "label[0,2;"..S("Custo: @1 CashXP", escolha.custo).."]"
+			.."label[0,2.5;"..S("Unidades: @1", escolha.qtd).."]"
+			.."item_image_button[0,3;2.1,2.1;"..escolha.item..";comprar;"..S("Comprar").."]"
 	end
 	
 	minetest.show_formspec(name, "xpro:shop", formspec)
@@ -103,13 +104,13 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 			
 			-- Tenta trocar
 			if xp_disp < escolha.custo then
-				xpro.acessar_shop(name, "Cash XP insuficiente")
+				xpro.acessar_shop(name, S("Cash XP insuficiente"))
 			else
 				if xpro.tror.trocar_plus(player, nil, {escolha.item.." "..escolha.qtd}) == false then
-					xpro.acessar_shop(name, "Inventario lotado")
+					xpro.acessar_shop(name, S("Inventario lotado"))
 				else
 					player:set_attribute("xpro_xp_gasto", (xp_gasto+escolha.custo))
-					xpro.acessar_shop(name, minetest.colorize("#0C0", "Adiquirido"))
+					xpro.acessar_shop(name, minetest.colorize("#0C0", S("Adiquirido")))
 				end
 			end
 		end
@@ -131,16 +132,4 @@ xpro.registrar_premio = function(name, def)
 	atualizar_string_menu_shop()
 end
 
-
--- Premios basicos
-for _,dados in ipairs({
-	{name="Pedras", item="default:dirt", qtd=50, custo=100},
-	{name="Pedregulho", item="default:cobble", qtd=25, custo=50},
-}) do
-	xpro.registrar_premio(dados.name, {
-		item=dados.item, 
-		qtd=dados.qtd, 
-		custo=dados.custo,
-	})
-end
 

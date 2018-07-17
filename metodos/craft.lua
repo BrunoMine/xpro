@@ -10,9 +10,7 @@
   ]]
 
 -- Lista de itens que geram recompensa
-xpro.craft_xp_list = {
-	--["default:torch"] = 1,
-}
+xpro.craft_xp_list = {}
 
 -- Chamada global
 minetest.register_on_craft(function(itemstack, player, old_craft_grid, craft_inv)
@@ -28,13 +26,8 @@ minetest.register_on_craft(function(itemstack, player, old_craft_grid, craft_inv
 	end
 end)
 
-
-
-
-
-
-
-
-
-
-
+-- Registrar item para o evento
+xpro.register_on_craft = function(name, xp)
+	if tonumber(xp) == 0 then return end
+	xpro.craft_xp_list[name] = tonumber(xp)
+end
