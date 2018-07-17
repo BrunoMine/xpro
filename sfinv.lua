@@ -47,7 +47,7 @@ sfinv.register_page("xpro:info", {
 			.."image[4.17,0.7;3.2,3.2;"..xpro.ligas[my_lvl].img.."]"
 			
 			.."label[0,3.3;"..S("Progresso").."]"
-			.."image[0,3.8;9.65,0.8;xpro_xp_bar_alfa.png^[lowpart:"..math.ceil(progresso*100)..":xpro_xp_bar.png^[transformR270]"
+			.."image[0,3.8;9.65,0.8;xpro_xp_bar_grade.png^[transformR90^[lowpart:"..math.ceil(progresso*100)..":xpro_xp_bar.png^[transformR270]"
 			.."image[0,3.8;9.65,0.8;xpro_xp_bar_grade.png]"
 		
 		return sfinv.make_formspec(player, context, formspec, true)

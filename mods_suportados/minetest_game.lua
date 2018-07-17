@@ -20,6 +20,7 @@ for name,xp in pairs({
 	-- Moveis
 	["default:furnace"] = 2,
 	["doors:door_steel"] = 3,
+	["doors:trapdoor_steel"] = 2,
 	["beds:bed"] = 1,
 	["beds:fancy_bed"] = 1,
 	["default:meselamp"] = 3,
