@@ -1,0 +1,15 @@
+{
+    "name": "xpro",
+    "description": "API de n\u00edveis e experiencia aos jogadores",
+    "keywords": [
+        "xpro"
+    ],
+    "homepage": "https://github.com/BrunoMine/xpro",
+    "forum": "https://forum.minetest.net/viewtopic.php?t=1",
+    "screenshots": [
+        "https://raw.githubusercontent.com/BrunoMine/xpro/master/screenshot.png"
+    ],
+    "authors": [
+        "BrunoMine"
+    ]
+}
