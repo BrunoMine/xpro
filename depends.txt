@@ -2,3 +2,7 @@ default
 intllib?
 sfinv?
 hudbars?
+beds?
+farming?
+wool?
+carts?
