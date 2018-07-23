@@ -18,7 +18,7 @@ for name,xp in pairs({
 	["bucket:bucket_empty"] = 2,
 	["default:skeleton_key"] = 1,
 	-- Moveis
-	["default:furnace"] = 2,
+	["default:furnace"] = 1,
 	["doors:door_steel"] = 3,
 	["doors:trapdoor_steel"] = 2,
 	["beds:bed"] = 1,
