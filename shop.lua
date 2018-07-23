@@ -111,6 +111,10 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 				else
 					player:set_attribute("xpro_xp_gasto", (xp_gasto+escolha.custo))
 					xpro.acessar_shop(name, minetest.colorize("#0C0", S("Adiquirido")))
+					-- Limpa o inventario para exibir novo cash disponivel
+					if sfinv then
+						sfinv.set_player_inventory_formspec(minetest.get_player_by_name(name))
+					end
 				end
 			end
 		end
