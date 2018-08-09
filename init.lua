@@ -53,6 +53,10 @@ dofile(modpath.."/metodos/place_node.lua")
 dofile(modpath.."/mods_suportados/minetest_game.lua")
 dofile(modpath.."/mods_suportados/farming_redo.lua")
 dofile(modpath.."/mods_suportados/moreores.lua")
+dofile(modpath.."/mods_suportados/3d_armor.lua")
+dofile(modpath.."/mods_suportados/3d_armor_stand.lua")
+dofile(modpath.."/mods_suportados/shields.lua")
+dofile(modpath.."/mods_suportados/xdecor.lua")
 
 notificar("OK")
 
