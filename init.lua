@@ -51,6 +51,7 @@ dofile(modpath.."/metodos/place_node.lua")
 
 -- Suporte para mods
 dofile(modpath.."/mods_suportados/minetest_game.lua")
+dofile(modpath.."/mods_suportados/farming_redo.lua")
 
 notificar("OK")
 
