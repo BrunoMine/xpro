@@ -1,4 +1,15 @@
 # Configurações aplicaveis para o menu gráfico
+# Settings applicable from Minetest GUI
 
 
-
+# Inventário usado para acessar o painel de niveis
+# Inventory used to access the level panel
+# 
+# Diponiveis|Available:
+# 
+# * sfinv 
+#   - Depends: sfinv
+# 
+# * unified_inventory 
+#   - Depends: unified_inventory
+xpro_inventory (Inventario | Inventory) enum sfinv sfinv,unified_inventory

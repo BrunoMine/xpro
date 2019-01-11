@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 10:28-0300\n"
-"PO-Revision-Date: 2018-07-17 10:28-0300\n"
+"POT-Creation-Date: 2019-01-11 18:04-0200\n"
+"PO-Revision-Date: 2019-01-11 18:08-0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: hud.lua
@@ -26,11 +26,11 @@ msgstr "XP"
 msgid "+@1XP"
 msgstr "+@1XP"
 
-#: hud.lua sfinv.lua
+#: hud.lua sfinv.lua unified_inventory.lua
 msgid "Liga @1"
 msgstr "League @1"
 
-#: hud.lua sfinv.lua
+#: hud.lua sfinv.lua unified_inventory.lua
 msgid "Nivel @1"
 msgstr "Level @1"
 
@@ -194,6 +194,10 @@ msgstr "Diamond V"
 msgid "Diamante VI"
 msgstr "Diamond VI"
 
+#: ranking.lua shop.lua
+msgid "Voltar"
+msgstr "Return"
+
 #: ranking.lua
 msgid "Pontos"
 msgstr "Score"
@@ -202,27 +206,27 @@ msgstr "Score"
 msgid "Jogador"
 msgstr "Player"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Nivel"
 msgstr "Level"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Pontos: @1"
 msgstr "Score: @1"
 
-#: sfinv.lua shop.lua
+#: sfinv.lua shop.lua unified_inventory.lua
 msgid "Cash XP: @1"
 msgstr "XP Cash: @1"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Loja de Premios"
 msgstr "Awards Store"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Ranking Global"
 msgstr "Global Ranking"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Progresso"
 msgstr "Progress"
 
@@ -239,6 +243,10 @@ msgid "Custo: @1 CashXP"
 msgstr "Cost: @1 XPCash"
 
 #: shop.lua
+msgid "Nivel mínimo: @1"
+msgstr "Minimum level: @1"
+
+#: shop.lua
 msgid "Unidades: @1"
 msgstr "Units: @1"
 
@@ -251,6 +259,10 @@ msgid "Cash XP insuficiente"
 msgstr "Insufficient XPCash"
 
 #: shop.lua
+msgid "Precisa estar no nivel @1"
+msgstr "Must be at level @1"
+
+#: shop.lua
 msgid "Inventario lotado"
 msgstr "Full inventory"
 
@@ -258,10 +270,8 @@ msgstr "Full inventory"
 msgid "Adiquirido"
 msgstr "Acquired"
 
-#: shop.lua
-msgid "Pedras"
-msgstr "Stones"
+#~ msgid "Pedras"
+#~ msgstr "Stones"
 
-#: shop.lua
-msgid "Pedregulho"
-msgstr "Cobble"
+#~ msgid "Pedregulho"
+#~ msgstr "Cobble"

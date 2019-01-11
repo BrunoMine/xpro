@@ -4,23 +4,23 @@
 [![forum](https://img.shields.io/badge/minetest-mod-green.svg?style=flat-square)](https://forum.minetest.net/viewtopic.php?f=9&t=20499&p=325793#p325793)
 [![bower](https://img.shields.io/badge/bower-mod-green.svg?style=flat-square)](https://minetest-bower.herokuapp.com/mods/xpro)
 
-## Description
-System of XP and levels
+## Descrição
+Sistema de niveis e experiencia
 
-## Requirements
+## Requisitos
 * Minetest 0.4.17 ou superior
 * default mod
-* sfinv mod (optional)
-* unified_inventory mod (optional)
-* intllib mod (optional)
+* sfinv mod (opicional)
+* unified_inventory mod (opicional)
+* intllib mod (opicional)
 
-## License
-See LICENSE.txt for more info about LGPL 3.0 license
+## Licença
+Veja LICENSE.txt para informações detalhadas da licença LGPL 3.0
 
-### Authors of the source code
-Originally by BrunoMine, Bruno Borges <borgesdossantosbruno@gmail.com> (LGPL 3.0)
+### Autores do código fonte
+Originalmente por BrunoMine, Bruno Borges <borgesdossantosbruno@gmail.com> (LGPL 3.0)
 
-### Authors of media (textures, models and sonds)
-All that are not described here are authored by 
+### Autores de mídias (texturas, modelos and sons)
+Todas que não estão descritas aqui são de autoria de
 BrunoMine, Bruno Borges <borgesdossantosbruno@gmail.com> (CC BY-SA 3.0)
 

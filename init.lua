@@ -38,10 +38,11 @@ dofile(modpath.."/tradutor.lua")
 dofile(modpath.."/api.lua")
 dofile(modpath.."/ligas.lua")
 dofile(modpath.."/shop.lua")
-dofile(modpath.."/sfinv.lua")
 dofile(modpath.."/progresso.lua")
 dofile(modpath.."/ranking.lua")
 dofile(modpath.."/hud.lua")
+dofile(modpath.."/inventory.lua")
+
 
 -- Metodos para evoluir
 dofile(modpath.."/metodos/die.lua")

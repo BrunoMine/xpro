@@ -8,13 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 10:28-0300\n"
+"POT-Creation-Date: 2019-01-11 18:04-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: hud.lua
@@ -25,11 +25,11 @@ msgstr ""
 msgid "+@1XP"
 msgstr ""
 
-#: hud.lua sfinv.lua
+#: hud.lua sfinv.lua unified_inventory.lua
 msgid "Liga @1"
 msgstr ""
 
-#: hud.lua sfinv.lua
+#: hud.lua sfinv.lua unified_inventory.lua
 msgid "Nivel @1"
 msgstr ""
 
@@ -193,6 +193,10 @@ msgstr ""
 msgid "Diamante VI"
 msgstr ""
 
+#: ranking.lua shop.lua
+msgid "Voltar"
+msgstr ""
+
 #: ranking.lua
 msgid "Pontos"
 msgstr ""
@@ -201,27 +205,27 @@ msgstr ""
 msgid "Jogador"
 msgstr ""
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Nivel"
 msgstr ""
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Pontos: @1"
 msgstr ""
 
-#: sfinv.lua shop.lua
+#: sfinv.lua shop.lua unified_inventory.lua
 msgid "Cash XP: @1"
 msgstr ""
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Loja de Premios"
 msgstr ""
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Ranking Global"
 msgstr ""
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Progresso"
 msgstr ""
 
@@ -238,6 +242,10 @@ msgid "Custo: @1 CashXP"
 msgstr ""
 
 #: shop.lua
+msgid "Nivel mínimo: @1"
+msgstr ""
+
+#: shop.lua
 msgid "Unidades: @1"
 msgstr ""
 
@@ -250,17 +258,13 @@ msgid "Cash XP insuficiente"
 msgstr ""
 
 #: shop.lua
+msgid "Precisa estar no nivel @1"
+msgstr ""
+
+#: shop.lua
 msgid "Inventario lotado"
 msgstr ""
 
 #: shop.lua
 msgid "Adiquirido"
-msgstr ""
-
-#: shop.lua
-msgid "Pedras"
-msgstr ""
-
-#: shop.lua
-msgid "Pedregulho"
 msgstr ""
