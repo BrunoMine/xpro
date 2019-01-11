@@ -8,7 +8,7 @@
 System of XP and levels
 
 ## Requirements
-* Minetest 0.4.17 ou superior
+* Minetest 0.4.17 or higher.
 * default mod
 * sfinv mod (optional)
 * unified_inventory mod (optional)
