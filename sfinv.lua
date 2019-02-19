@@ -9,7 +9,7 @@
 	Inventario sfinv
   ]]
 
-if sfinv == nil then return end
+if not minetest.get_modpath("sfinv") then return end
 
 -- Traduções
 local S = xpro.S

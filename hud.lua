@@ -12,7 +12,7 @@
 local S = xpro.S
 
 -- Mod Hudbars
-if hb then
+if minetest.get_modpath("hudbars") then
 	
 	local get_progress = function(my_xp, my_lvl)
 		if xpro.niveis[my_lvl+1] == nil then return 100 end
