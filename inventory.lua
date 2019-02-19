@@ -23,13 +23,27 @@ xpro.show_inventory_formspec = function(player)
 end
 
 -- Metodos de acesso pelo inventario
-xpro.var.inv_mode = minetest.settings:get("xpro_inventory") or "sfinv"
+xpro.var.inv_mode = minetest.settings:get("xpro_inventory")
+
+-- Tenta identificar mod
+if xpro.var.inv_mode == nil then
+	if minetest.get_modpath("unified_inventory") then
+		xpro.var.inv_mode = "unified_inventory"
+
+	-- Se não indetificar nada, usa sfinv por padrão
+	else
+		xpro.var.inv_mode = "sfinv"
+	end
+end
+
 if xpro.var.inv_mode == "unified_inventory" then
 	dofile(modpath.."/unified_inventory.lua")
-else
-	xpro.var.inv_mode = "sfinv"
+
+elseif xpro.var.inv_mode == "sfinv" then
 	dofile(modpath.."/sfinv.lua")
 end
+
+
 
 
 
