@@ -32,7 +32,8 @@ unified_inventory.register_page("xpro:info", {
 			progresso = xp/xp_t
 		end
 		
-		local formspec = "label[0,0;"..S("Nivel @1", my_lvl).."]"
+		local formspec = "background[0.06,0.99;7.92,7.52;ui_misc_form.png]"
+			.."label[0,0;"..S("Nivel @1", my_lvl).."]"
 			.."label[0,0.5;"..S("Pontos: @1", my_xp).."]"
 			.."label[0,1;"..S("Cash XP: @1", xp_disp).."]"
 			.."button[0,1.5;3,1;xpro:shop;"..S("Loja de Premios").."]"
