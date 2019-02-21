@@ -78,7 +78,7 @@ end
 
 -- Abrir inventario na aba de niveis
 xpro.show_inventory_formspec = function(player)
-	minetest.show_formspec(player:get_player_name(), player:get_inventory_formspec(), "")
+	minetest.show_formspec(player:get_player_name(), "", player:get_inventory_formspec())
 end
 
 
