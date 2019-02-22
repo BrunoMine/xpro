@@ -23,10 +23,10 @@ xpro.show_inventory_formspec = function(player)
 end
 
 -- Metodos de acesso pelo inventario
-xpro.var.inv_mode = minetest.settings:get("xpro_inventory")
+xpro.var.inv_mode = minetest.settings:get("xpro_inventory") or "auto"
 
 -- Tenta identificar mod
-if xpro.var.inv_mode == nil then
+if xpro.var.inv_mode == "auto" then
 	if minetest.get_modpath("unified_inventory") then
 		xpro.var.inv_mode = "unified_inventory"
 

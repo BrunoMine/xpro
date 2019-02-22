@@ -7,9 +7,13 @@
 # 
 # Diponiveis|Available:
 # 
+# * auto
+#   - Tenta identificar automaticamente 
+#   - Try to auto-identify
+# 
 # * sfinv 
 #   - Depends: sfinv
 # 
 # * unified_inventory 
 #   - Depends: unified_inventory
-xpro_inventory (Inventario | Inventory) enum sfinv sfinv,unified_inventory
+xpro_inventory (Inventario | Inventory) enum auto auto,sfinv,unified_inventory
