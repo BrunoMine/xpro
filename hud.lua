@@ -83,7 +83,7 @@ if minetest.get_modpath("hudbars") then
 		-- text_color
 		"0xFFFFFF", 
 		-- label
-		S("XP"), 
+		"XP", 
 		-- textures
 		{
 			bar = "xpro_hudbars_bar_xp.png",
@@ -97,7 +97,12 @@ if minetest.get_modpath("hudbars") then
 		-- default_start_hidden
 		false, 
 		-- format_string
-		"%s: %d%%"
+		"@1: @2%", 
+		-- format_string_config
+		{ 
+			order = {"label", "value"}, 
+			textdomain = "xpro" 
+		}
 	)
 	
 	-- Alterar barra ao adicionar XP
