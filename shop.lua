@@ -58,7 +58,7 @@ xpro.acessar_shop = function(name, aviso)
 	local formspec = "size[8,6]"
 		..default.gui_bg
 		..default.gui_bg_img
-		.."button[6,0;2,1;back;"..S("Voltar").."]"
+		.."button_exit[6,0;2,1;close;"..S("Fechar").."]"
 		.."label[0,0;"..S("Loja de Itens por XP").."]"
 		.."label[0,0.5;"..S("Cash XP: @1", xp_disp).."]"
 		.."textlist[3.2,1;4.5,5;menu;"..string_menu_shop.."]"
@@ -121,11 +121,6 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 					xpro.update_inventory_formspec(minetest.get_player_by_name(name))
 				end
 			end
-		
-		-- Retornar ao inventario
-		-- Return to inventory
-		elseif fields.back then
-			xpro.show_inventory_formspec(player)
 		end
 	end
 end)

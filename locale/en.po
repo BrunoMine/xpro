@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-05 03:01-0300\n"
-"PO-Revision-Date: 2020-04-05 02:47-0300\n"
+"POT-Creation-Date: 2020-04-05 14:42-0300\n"
+"PO-Revision-Date: 2020-04-05 14:43-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -191,8 +191,8 @@ msgid "Diamante VI"
 msgstr "Diamond VI"
 
 #: ranking.lua shop.lua
-msgid "Voltar"
-msgstr "Return"
+msgid "Fechar"
+msgstr "Close"
 
 #: ranking.lua
 msgid "Pontos"
@@ -299,13 +299,15 @@ msgid "Valor não numérico '@1'."
 msgstr "non-numerical value '@1'."
 
 #: comandos.lua
-#, fuzzy
 msgid "XP subtraído. Novo montante é @1."
-msgstr "XP subtracted. New amount is @1."
+msgstr "Subtracted XP. New amount is @1."
 
 #: comandos.lua
 msgid "XP adicionado. Novo montante é @1."
-msgstr "XP added. New amount is @1."
+msgstr "Added XP. New amount is @1."
+
+#~ msgid "Voltar"
+#~ msgstr "Return"
 
 #~ msgid "XP"
 #~ msgstr "XP"

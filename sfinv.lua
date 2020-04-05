@@ -76,7 +76,7 @@ xpro.update_inventory_formspec = function(player)
 	sfinv.set_player_inventory_formspec(player)
 end
 
--- Abrir inventario na aba de niveis
+-- Abrir inventario na aba de niveis [Não funciona pois o exibir formspec não significa abrir o inventario, os botões sfinv não funcionarão assim]
 xpro.show_inventory_formspec = function(player)
 	minetest.show_formspec(player:get_player_name(), "", player:get_inventory_formspec())
 end

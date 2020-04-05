@@ -120,7 +120,7 @@ local update_formspec = function()
 	xpro.ranking_formspec = "size[7,7]"
 		..default.gui_bg
 		..default.gui_bg_img
-		.."button[5,-0.2;2,1;back;"..S("Voltar").."]"
+		.."button_exit[5,-0.2;2,1;close;"..S("Fechar").."]"
 		.."label[0.6,0.4;"..S("Pontos").."]"
 		.."label[2.4,0.4;"..S("Jogador").."]"
 	
@@ -143,13 +143,6 @@ local update_formspec = function()
 end
 update_formspec()
 
-minetest.register_on_player_receive_fields(function(player, formname, fields)
-	if formname == "xpro:ranking" then
-		if fields.back then
-			xpro.show_inventory_formspec(player)
-		end
-	end
-end)
 
 xpro.register_on_add_xp(function(name, xp_added)
 	--if xpro.ranking 
