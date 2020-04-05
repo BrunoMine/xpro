@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 10:28-0300\n"
-"PO-Revision-Date: 2018-07-17 10:28-0300\n"
+"POT-Creation-Date: 2020-04-05 02:41-0300\n"
+"PO-Revision-Date: 2020-04-05 02:59-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -19,18 +19,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: hud.lua
-msgid "XP"
-msgstr "XP"
-
-#: hud.lua
 msgid "+@1XP"
 msgstr "+@1XP"
 
-#: hud.lua sfinv.lua
+#: hud.lua sfinv.lua unified_inventory.lua
 msgid "Liga @1"
 msgstr "Liga @1"
 
-#: hud.lua sfinv.lua
+#: hud.lua sfinv.lua unified_inventory.lua
 msgid "Nivel @1"
 msgstr "Nivel @1"
 
@@ -194,6 +190,10 @@ msgstr "Diamante V"
 msgid "Diamante VI"
 msgstr "Diamante VI"
 
+#: ranking.lua shop.lua
+msgid "Voltar"
+msgstr "Voltar"
+
 #: ranking.lua
 msgid "Pontos"
 msgstr "Pontos"
@@ -202,27 +202,27 @@ msgstr "Pontos"
 msgid "Jogador"
 msgstr "Jogador"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Nivel"
 msgstr "Nivel"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Pontos: @1"
 msgstr "Pontos: @1"
 
-#: sfinv.lua shop.lua
+#: sfinv.lua shop.lua unified_inventory.lua
 msgid "Cash XP: @1"
 msgstr "Cash XP: @1"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Loja de Premios"
 msgstr "Loja de Premios"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Ranking Global"
 msgstr "Ranking Global"
 
-#: sfinv.lua
+#: sfinv.lua unified_inventory.lua
 msgid "Progresso"
 msgstr "Progresso"
 
@@ -239,6 +239,10 @@ msgid "Custo: @1 CashXP"
 msgstr "Custo: @1 CashXP"
 
 #: shop.lua
+msgid "Nivel mínimo: @1"
+msgstr "Nivel mínimo: @1"
+
+#: shop.lua
 msgid "Unidades: @1"
 msgstr "Unidades: @1"
 
@@ -251,6 +255,10 @@ msgid "Cash XP insuficiente"
 msgstr "Cash XP insuficiente"
 
 #: shop.lua
+msgid "Precisa estar no nivel @1"
+msgstr "Precisa estar no nivel @1"
+
+#: shop.lua
 msgid "Inventario lotado"
 msgstr "Inventario lotado"
 
@@ -258,10 +266,51 @@ msgstr "Inventario lotado"
 msgid "Adiquirido"
 msgstr "Adiquirido"
 
-#: shop.lua
-msgid "Pedras"
-msgstr "Pedras"
+#: comandos.lua
+msgid "Administrador XPro"
+msgstr "Administrador XPro"
 
-#: shop.lua
-msgid "Pedregulho"
-msgstr "Pedregulho"
+#: comandos.lua
+msgid "[<jogador> | <add/subtract> <xp>]"
+msgstr "[<jogador> | <add/subtract> <xp>]"
+
+#: comandos.lua
+msgid "Administrar XP dos jogadores"
+msgstr "Administrar XP dos jogadores"
+
+#: comandos.lua
+msgid "Jogador inexistente."
+msgstr "Jogador inexistente."
+
+#: comandos.lua
+msgid "XP: @1"
+msgstr "XP: @1"
+
+#: comandos.lua
+msgid "Nivel: @1"
+msgstr "Nivel: @1"
+
+#: comandos.lua
+msgid "Liga: @1"
+msgstr "Liga: @1"
+
+#: comandos.lua
+msgid "Valor não numérico '@1'."
+msgstr "Valor não numérico '@1'."
+
+#: comandos.lua
+msgid "XP subtraido. Novo montante é @1."
+msgstr "XP subtraido. Novo montante é @1."
+
+#: comandos.lua
+msgid "XP adicionado. Novo montante é @1."
+msgstr "XP adicionado. Novo montante é @1."
+
+#~ msgid "XP"
+#~ msgstr "XP"
+
+#~ msgid "Pedras"
+#~ msgstr "Pedras"
+
+#~ msgid "Pedregulho"
+#~ msgstr "Pedregulho"

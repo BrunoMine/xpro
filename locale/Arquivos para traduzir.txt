@@ -1,1 +1,1 @@
-api.lua hud.lua ligas.lua progresso.lua ranking.lua sfinv.lua shop.lua inventory.lua unified_inventory.lua
+api.lua hud.lua ligas.lua progresso.lua ranking.lua sfinv.lua shop.lua inventory.lua unified_inventory.lua comandos.lua

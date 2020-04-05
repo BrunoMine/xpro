@@ -1,6 +1,6 @@
 --[[
 	Mod Xpro para Minetest
-	Copyright (C) 2018 BrunoMine (https://github.com/BrunoMine)
+	Copyright (C) 2020 BrunoMine (https://github.com/BrunoMine)
 	
 	Recebeste uma cópia da GNU Lesser General
 	Public License junto com esse software,
@@ -12,7 +12,7 @@
 -- Notificador de Inicializador
 local notificar = function(msg)
 	if minetest.setting_get("log_mods") then
-		minetest.debug("[Xpro]"..msg)
+		minetest.debug("[XPro]"..msg)
 	end
 end
 
@@ -42,7 +42,7 @@ dofile(modpath.."/progresso.lua")
 dofile(modpath.."/ranking.lua")
 dofile(modpath.."/hud.lua")
 dofile(modpath.."/inventory.lua")
-
+dofile(modpath.."/comandos.lua")
 
 -- Metodos para evoluir
 dofile(modpath.."/metodos/die.lua")
