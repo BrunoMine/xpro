@@ -65,10 +65,16 @@ sfinv.register_page("xpro:info", {
 
 -- Atualização do painel ao adicionar ou remover pontos
 xpro.register_on_add_xp(function(name, xp_added)
-	sfinv.set_player_inventory_formspec(minetest.get_player_by_name(name))
+	-- Check if player is online
+	local player = minetest.get_player_by_name(name)
+	if not player then return end
+	sfinv.set_player_inventory_formspec(player)
 end)
 xpro.register_on_rem_xp(function(name, xp_removed)
-	sfinv.set_player_inventory_formspec(minetest.get_player_by_name(name))
+	-- Check if player is online
+	local player = minetest.get_player_by_name(name)
+	if not player then return end
+	sfinv.set_player_inventory_formspec(player)
 end)
 
 -- Atualizar inventário
