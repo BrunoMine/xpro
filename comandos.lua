@@ -40,8 +40,8 @@ minetest.register_chatcommand("xpro", {
 			local my_xp = xpro.get_player_xp(param1)
 			minetest.chat_send_player(name, "***** ".. param1 .." *****")
 			minetest.chat_send_player(name, S("XP: @1", my_xp))
-			minetest.chat_send_player(name, S("Nivel: @1", xpro.get_player_lvl(name)))
-			minetest.chat_send_player(name, S("Liga: @1", xpro.ligas[xpro.get_player_lvl(name)].name))
+			minetest.chat_send_player(name, S("Nivel: @1", xpro.get_player_lvl(param1)))
+			minetest.chat_send_player(name, S("Liga: @1", xpro.ligas[xpro.get_player_lvl(param1)].name))
 			return
 		end
 
