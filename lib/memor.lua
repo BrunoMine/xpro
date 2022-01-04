@@ -253,48 +253,44 @@ end
 
 -- Fim
 
+-- Implementação em mod_storage
+
+local mod_storage = minetest.get_mod_storage()
+
+-- Fim
+
 -- Montagem de banco de dados
 
 bd = {}
 
 -- Inserir dados comuns
 bd.salvar = function(tb, index, valor)
-	return memor.inserir(tb, index, valor)
+	return mod_storage:set_string("memor."..tb.."."..index, minetest.serialize(valor))
 end
 
 -- Inserir textos complexos
 bd.salvar_texto = function(tb, index, valor)
-	return memor.inserir(tb, index, valor, true)
+	return mod_storage:set_string("memor."..tb.."."..index, valor)
 end
 
 -- Consultar dados
 bd.pegar = function(tb, index)
-	return memor.consultar(tb, index)
+	return minetest.deserialize(mod_storage:get_string("memor."..tb.."."..index))
 end
 
 -- Inserir dados
 bd.pegar_texto = function(tb, index, valor)
-	return memor.consultar(tb, index, true)
+	return mod_storage:get_string("memor."..tb.."."..index)
 end
 
 -- Verificar dados
 bd.verif = function(tb, index)
-	return memor.verificar(tb, index)
+	return mod_storage:contains("memor."..tb.."."..index)
 end
 
 -- Remover dados
 bd.remover = function(tb, index)
-	return memor.deletar(tb, index)
-end
-
--- Remover tabela
-bd.drop_tb = function(tb)
-	return memor.deletar_dir(tb)
-end
-
--- Listar dados
-bd.listar = function(tb)
-	return memor.listar(tb)
+	return mod_storage:set_string("memor."..tb.."."..index, "")
 end
 
 return bd

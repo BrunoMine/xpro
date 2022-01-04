@@ -25,7 +25,7 @@ xpro.update_rank = function(name)
 	local att_name = {}
 	local rank = xpro.get_rank()
 	local pontos = 0
-	if xpro.bd.verif("jogador_"..name, "xp") == true then pontos = xpro.bd.pegar("jogador_"..name, "xp") end
+	if xpro.bd.verif("player:"..name, "xp") == true then pontos = xpro.bd.pegar("player:"..name, "xp") end
 	local m1 = {name=name,pontos=pontos}
 	local m2 = {}
 	for x=1, 10 do
@@ -129,7 +129,7 @@ local update_formspec = function()
 	for x=1, 10 do
 		local w = (0.4+(0.5*x))+(0.1*x)
 		local liga = nil
-		if xpro.bd.verif("jogador_"..rank[tostring(x)].name, "lvl") == true then liga = xpro.ligas[xpro.bd.pegar("jogador_"..rank[tostring(x)].name, "lvl")] end
+		if xpro.bd.verif("player:"..rank[tostring(x)].name, "lvl") == true then liga = xpro.ligas[xpro.bd.pegar("player:"..rank[tostring(x)].name, "lvl")] end
 		if liga ~= nil then
 			liga = "image[1.75,"..(w*0.995-0.05)..";0.66,0.66;"..liga.img.."]"
 		else

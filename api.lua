@@ -68,12 +68,12 @@ end
 
 -- Pegar xp de um jogador (informar)
 xpro.get_player_xp = function(name)
-	return xpro.bd.pegar("jogador_"..name, "xp")
+	return xpro.bd.pegar("player:"..name, "xp")
 end
 
 -- Pegar nivel de um jogador (informar)
 xpro.get_player_lvl = function(name)
-	return xpro.bd.pegar("jogador_"..name, "lvl")
+	return xpro.bd.pegar("player:"..name, "lvl")
 end
 
 
@@ -81,10 +81,10 @@ end
 minetest.register_on_joinplayer(function(player)
 	
 	-- Verifica se jogador ja possui registro no BD
-	if xpro.bd.verif("jogador_"..player:get_player_name(), "xp") ~= true then
+	if xpro.bd.verif("player:"..player:get_player_name(), "xp") ~= true then
 		
 		-- Criar registro
-		local tb_name = "jogador_"..player:get_player_name()
+		local tb_name = "player:"..player:get_player_name()
 		
 		-- XP
 		xpro.bd.salvar(tb_name, "xp", 0)
@@ -107,7 +107,7 @@ end
 xpro.add_xp = function(name, xp_add)
 
 	-- Nome da tabela referente ao jogador no banco de dados
-	local tb_name = "jogador_"..name
+	local tb_name = "player:"..name
 	
 	local xp_atual = xpro.get_player_xp(name)
 	
@@ -142,7 +142,7 @@ end
 xpro.rem_xp = function(name, xp_rem)
 
 	-- Nome da tabela referente ao jogador no banco de dados
-	local tb_name = "jogador_"..name
+	local tb_name = "player:"..name
 	
 	local xp_atual = xpro.get_player_xp(name)
 	

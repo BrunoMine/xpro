@@ -31,7 +31,7 @@ minetest.register_chatcommand("xpro", {
 		local param1, param2, param3 = m[1], m[2], m[3]
 		
 		-- Check account
-		if xpro.bd.verif("jogador_"..param1, "xp") ~= true then
+		if xpro.bd.verif("player:"..param1, "xp") ~= true then
 			return false, S("Jogador inexistente.")
 		end
 		
